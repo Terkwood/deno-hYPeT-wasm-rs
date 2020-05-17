@@ -1,3 +1,4 @@
+#!/usr/bin/env -S deno run --allow-run --allow-read
 const FILE_NAME = "target/wasm32-unknown-unknown/debug/deno_h_ype_t_rs.wasm";
 const wasmCode = await Deno.readFile(FILE_NAME);
 const wasmModule = new WebAssembly.Module(wasmCode);
